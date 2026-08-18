@@ -17,15 +17,15 @@ public class BrowserNavigation {
 		System.out.println(driver.getTitle());
 		System.out.println(driver.getCurrentUrl());
 		Thread.sleep(4);
-		driver.get("https://www.yahoo.com/");  //https://www.amazon.com/
+		driver.get("https://www.yahoo.com/");  //https://www.yahoo.com/
 		System.out.println(driver.getTitle());
 		System.out.println(driver.getCurrentUrl());
 		Thread.sleep(4);
 		driver.navigate().back();
 		System.out.println(driver.getTitle()); //google.com
 		Thread.sleep(4);
-		driver.navigate().forward(); //amazon.com
-		System.out.println(driver.getTitle()); //
+		driver.navigate().forward();
+		System.out.println(driver.getTitle()); //https://www.yahoo.com/
 	}
 	public static void tearDown() {
 		driver.quit();
