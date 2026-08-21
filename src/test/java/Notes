@@ -1,3 +1,5 @@
 To run the test on private browser, Selenium provides browser
 specific options classes.
 ChromeOptions | FirefoxOptions | EdgeOptions
+
+Add usgae of different commands
